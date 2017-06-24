@@ -173,7 +173,7 @@ Preloader Style
   right: 0;
   bottom: 0;
   z-index: 999999;
-  background: #24242a;
+  background: #560000;
 }
 .preloader i {
   color: #fff;
@@ -193,7 +193,7 @@ Preloader Style
 Navigation Style
 ========================================================================== */
 .navbar-default {
-  background: rgba(13, 13, 13, 0.6);
+  background: transparent;
   margin-bottom: 0;
   border: none;
 }
@@ -203,6 +203,10 @@ Navigation Style
 }
 .navbar-default .nav-wrap {
   width: 50%;
+}
+.navbar-brand img {
+  height: 68px;
+  margin-top: -5px;
 }
 .navbar-default .nav > li > a {
   font-size: 14px;
@@ -218,7 +222,7 @@ Navigation Style
 .navbar-default .nav > li > a:hover,
 .navbar-default .nav > li > a:focus,
 .navbar-default .nav > li > a:active {
-  color: #a3a3a3;
+  color: #d89b00;
 }
 .navbar-default .social-media {
   float: right;
@@ -232,21 +236,27 @@ Navigation Style
 .navbar-default .navbar-nav > .active > a:focus,
 .navbar-default .navbar-nav > .active > a:hover {
   background: transparent;
-  color: #a3a3a3;
+  color: #d89b00;
 }
 
 .top-nav-collapse {
-  background: #24242a;
+  background: rgba(92, 10, 10, 0.95);
 }
 .top-nav-collapse .navbar-brand {
   height: auto;
 }
 .top-nav-collapse .navbar-brand img {
-  width: 52px;
-  height: 52px;
+  height: 68px;
+  margin-top: 5px;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .top-nav-collapse .nav > li > a {
   padding: 30px 15px;
+  letter-spacing: 1.5px;
+  margin-top: 10px;
 }
 
     /* ==========================================================================
@@ -262,6 +272,16 @@ Sliders Style
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.72);
+}
+.one{
+  background-image: url(../img/sliders/Slide.jpg)
+}
+.two{
+  background-image: url(../img/sliders/Slide2.jpg)
+}
+.three{
+  background-image: url(../img/sliders/Slide3.jpg)
 }
 #owl-hero .item .caption {
   position: absolute;
@@ -364,7 +384,7 @@ Welcome Style
 Services Style
 ========================================================================== */
 #services {
-  background: #24242a;
+  background: #3d0000;
   padding: 60px 0;
   text-align: center;
 }
@@ -498,7 +518,7 @@ Work Process Style
 Fun Facts Style
 ========================================================================== */
 #fun-facts {
-  background: #24242a;
+  background: #3d0000;
   padding: 60px 0;
   text-align: center;
 }
@@ -665,8 +685,8 @@ Google Map Style
 Footer Map Style
 ========================================================================== */
 footer {
-  background: #24242a;
-  padding: 60px 0;
+  background: #560000;
+  padding: 50px 0;
   text-align: center;
 }
 footer h1 {
@@ -701,7 +721,7 @@ Media Queries Style
 @media (max-width: 992px) {
   /*-- Navigation --*/
   .navbar-default {
-    background: #24242a;
+    background: rgba(92, 10, 10, 0.85);
   }
   .navbar-default .navbar-header {
     width: 100%;
@@ -711,8 +731,8 @@ Media Queries Style
     height: auto;
   }
   .navbar-default .navbar-header .navbar-brand img {
-    width: 52px;
-    height: 52px;
+    height: 35px;
+    margin-top: 20px;
   }
   .navbar-default .nav-wrap {
     width: 100%;
@@ -738,10 +758,11 @@ Media Queries Style
     display: block;
   }
   .navbar-default .navbar-collapse {
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    box-shadow: inset 0 1px 0 rgba(92, 10, 10, 0.85);
   }
   .navbar-default .navbar-collapse.collapse {
     display: none !important;
+    margin-top: 10px;
   }
   .navbar-default .navbar-nav {
     float: none !important;
@@ -781,4 +802,7 @@ Media Queries Style
   #testimonials h5 {
     font-size: 18px;
   }
+}
+.welcomeLogo{
+  height: 200px;
 }

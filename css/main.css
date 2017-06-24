@@ -222,7 +222,7 @@ Navigation Style
 .navbar-default .nav > li > a:hover,
 .navbar-default .nav > li > a:focus,
 .navbar-default .nav > li > a:active {
-  color: #d89b00;
+  color: #efac02;
 }
 .navbar-default .social-media {
   float: right;
@@ -236,7 +236,7 @@ Navigation Style
 .navbar-default .navbar-nav > .active > a:focus,
 .navbar-default .navbar-nav > .active > a:hover {
   background: transparent;
-  color: #d89b00;
+  color: #efac02;
 }
 
 .top-nav-collapse {
@@ -275,13 +275,34 @@ Sliders Style
   background-color: rgba(0, 0, 0, 0.72);
 }
 .one{
-  background-image: url(../img/sliders/Slide.jpg)
+  background: 
+    /* top, transparent red, faked with gradient */ 
+    linear-gradient(
+      rgba(0, 0, 0, 0.78), 
+      rgba(78, 9, 9, 0.50)
+    ),
+    /* bottom, image */
+    url(../img/sliders/Slide.jpg);
 }
 .two{
-  background-image: url(../img/sliders/Slide2.jpg)
+  background: 
+    /* top, transparent red, faked with gradient */ 
+    linear-gradient(
+      rgba(0, 0, 0, 0.78), 
+      rgba(78, 9, 9, 0.50)
+    ),
+    /* bottom, image */
+    url(../img/sliders/Slide2.jpg);
 }
 .three{
-  background-image: url(../img/sliders/Slide3.jpg)
+  background: 
+    /* top, transparent red, faked with gradient */ 
+    linear-gradient(
+      rgba(0, 0, 0, 0.78), 
+      rgba(78, 9, 9, 0.50)
+    ),
+    /* bottom, image */
+    url(../img/sliders/Slide3.jpg);
 }
 #owl-hero .item .caption {
   position: absolute;
